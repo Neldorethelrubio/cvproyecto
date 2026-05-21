@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web CV - Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="proyecto3.css" />
+</head>
+
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">Cargando...</div>
+
+  <!-- HEADER -->
+  <header class="header" id="inicio">
+    <div class="logo">MiPortfolio</div>
+
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <div id="themeToggle">🌓</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hola, soy <span>Tu Nombre</span></h1>
+      <p>Desarrollador Web | Diseñador UI</p>
+
+      <p id="typing"></p>
+      <p id="reloj"></p>
+
+      <a href="#portfolio" class="btn">Ver mi trabajo</a>
+    </div>
+  </section>
+
+  <!-- SOBRE MÍ -->
+  <section class="section" id="sobre">
+    <h2>Sobre mí</h2>
+    <p>
+      Soy un desarrollador web en formación apasionado por crear interfaces modernas y funcionales.
+    </p>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="section dark" id="servicios">
+    <h2>Servicios</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Web Responsive</h3>
+        <p>Adaptadas a cualquier dispositivo.</p>
+      </div>
+
+      <div class="card">
+        <h3>UI Design</h3>
+        <p>Diseños modernos y atractivos.</p>
+      </div>
+
+      <div class="card">
+        <h3>Optimización</h3>
+        <p>Webs rápidas y eficientes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="section" id="portfolio">
+    <h2>Portfolio</h2>
+
+    <div class="gallery">
+      <img src="https://picsum.photos/400/300?1" class="img-click">
+      <img src="https://picsum.photos/400/300?2" class="img-click">
+      <img src="https://picsum.photos/400/300?3" class="img-click">
+      <img src="https://picsum.photos/400/300?4" class="img-click">
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section dark" id="contacto">
+    <h2>Contacto</h2>
+
+    <form id="form">
+      <input type="text" id="nombre" placeholder="Nombre" />
+      <input type="email" id="email" placeholder="Email" />
+      <textarea id="mensaje" placeholder="Mensaje"></textarea>
+      <button type="submit">Enviar</button>
+      <p id="error"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 - Mi Portfolio</p>
+  </footer>
+
+  <!-- BOTÓN SUBIR -->
+  <button id="topBtn">↑</button>
+
+  <script src="proyecto3.js"></script>
+</body>
+</html>

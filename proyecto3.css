@@ -1,0 +1,207 @@
+body{
+  font-family:'Poppins', sans-serif;
+  background:#0f0f0f;
+  color:#fff;
+  margin:0;
+}
+
+/* LOADER */
+#loader{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:#0f0f0f;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+/* HEADER */
+.header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 30px;
+  background:#111;
+  z-index:1000;
+}
+
+.nav a{
+  color:#fff;
+  margin:0 10px;
+  transition:0.3s;
+}
+
+.nav a:hover{
+  color:#00bcd4;
+}
+
+.menu-toggle{
+  display:none;
+  cursor:pointer;
+  font-size:24px;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:linear-gradient(to right,#111,#222);
+}
+
+.hero span{
+  color:#00bcd4;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:10px 20px;
+  background:#00bcd4;
+  color:#000;
+  border-radius:5px;
+}
+
+/* SECCIONES */
+.section{
+  padding:80px 20px;
+  text-align:center;
+
+  opacity:0;
+  transform:translateY(40px);
+  transition:0.8s;
+}
+
+.section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.dark{
+  background:#1a1a1a;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  margin-top:20px;
+}
+
+.card{
+  background:#222;
+  padding:20px;
+  border-radius:10px;
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.gallery img{
+  width:100%;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+}
+
+/* FORM */
+form{
+  display:flex;
+  flex-direction:column;
+  max-width:400px;
+  margin:auto;
+}
+
+input,textarea{
+  margin:10px 0;
+  padding:10px;
+}
+
+button{
+  padding:10px;
+  background:#00bcd4;
+  border:none;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:#111;
+}
+
+/* EXTRAS */
+#reloj{
+  margin-top:10px;
+  opacity:0.8;
+}
+
+#typing{
+  color:#00bcd4;
+}
+
+/* BOTÓN ARRIBA */
+#topBtn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  display:none;
+  padding:10px 15px;
+  background:#00bcd4;
+  border:none;
+  cursor:pointer;
+}
+
+/* MODO CLARO */
+body.light{
+  background:#f5f5f5;
+  color:#111;
+}
+
+body.light .card{
+  background:#ddd;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .nav{
+    display:none;
+    position:absolute;
+    top:60px;
+    right:0;
+    background:#111;
+    flex-direction:column;
+  }
+
+  .nav.active{
+    display:flex;
+  }
+
+  .menu-toggle{
+    display:block;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery{
+    grid-template-columns:2fr;
+  }
+}
